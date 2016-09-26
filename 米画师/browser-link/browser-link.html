@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="ux_1474462591_9525251/iconfont.css">
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="ux_1474611898_727383/iconfont.css">
+		<script src="jquery.js"></script>
+		<style>
+			
+			.right{
+				width:100%;
+				height:3800px;
+				padding-left: 280px;
+				box-sizing: border-box;
+			}
+			.contain{
+				width:940px;
+				height:auto;
+		        margin:0 auto;
+				padding:80px 0;
+				box-sizing: border-box;
+			}
+			.title{
+				width:940px;
+				height:54px;
+				color:#000;
+				border-bottom: 20px;
+				box-sizing: border-box;
+				font-size: 30px;
+				font-weight: normal;
+				border-bottom: 1px solid #ccc;
+			}
+			.row{
+				width:940px;
+				height:37px;
+				line-height:37px;
+				color:#857f7f;
+			}
+			.row-left{
+				width:455px;
+				height:37px;
+				line-height:37px;
+				font-size: 12px;
+				float: left;
+			}
+			.row-time{
+				width:58px;
+				height:14px;
+				padding-left: 50px;
+				box-sizing: border-box;
+			}
+			.row-2{
+				float: left;
+				width:90px;
+				height:37px;
+				color:rgba(210,50,45,0.8);
+				cursor: pointer;
+				margin-left:160px;
+			}
+			.row-2 i{
+				font-family: 'iconfont';
+				content:'' ;
+				font-size: 14px;
+			}
+			.row-3{
+				float: left;
+				width:100px;
+				height:37px;
+				color:#F6A11E;
+				cursor: pointer;
+			}
+			.row-3 i{
+				font-family: 'iconfont';
+				content:'' ;
+				font-size: 14px;
+			}
+			.row-4{
+				float: right;
+				height:37px;
+				color:#333;
+				cursor: pointer;
+			}
+			.row-4{
+				font-family: 'iconfont';
+				content:'' ;
+			}
+			.reference{
+				width:940px;
+				height:auto;
+			}
+			.reference p{
+				width:200px;
+				height:20px;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 18px;
+				color: #333333;
+			}
+			.line{
+				width:940px;
+				height:0px;
+				border-top: 1px solid #eeeeee;
+				margin-top:20px;
+				margin-bottom: 20px;
+				font-weight: normal;
+			}
+			.reference img{
+				border:1px solid #ddd;
+			}
+			.addition{
+				width:940px;
+				height:20px;
+				margin-top:85px;
+				margin-bottom: 35px;
+				color:#514d4d;
+				font-size: 14px;
+				line-height: 20px;
+				font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', sans-serif;
+			}
+			.file{
+				width:146px;
+				height:42px;
+				color:#888;
+				font-size: 14px;
+			}
+			.file img{
+				width:40px;
+				height:40px;
+				margin-right: 15px;
+			}
+			.order{
+				width:940px;
+				height:20px;
+				line-height: 20px;
+				margin-top:85px;
+				margin-bottom: 25px;
+				color:#514d4d;
+				font-size: 14px;
+				font-family: font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', sans-serif;;
+			}
+			.table{
+				width:940px;
+				height:83px;
+				background: #eee;
+				border-radius: 4px;
+				padding-top:20px;
+				padding-bottom: 20px;
+			}
+			.tab{
+				width:188px;
+				height:83px;
+                float: left;
+			}
+			.tab-name{
+				width:188px;
+				height:17px;
+				line-height: 17px;
+				font-size: 12px;
+				text-align: center;
+				margin-top:2px;
+				margin-bottom: 11px;
+				position: relative;
+			}
+			.ball{
+				width:16px;
+				height:16px;
+				background: #7fd2e4;
+				border: 4px solid white;
+				border-radius: 50%;
+				margin-left: 82px;
+			
+			}
+			.tab-name::after{
+				content: '';
+				width:168px;
+				height:4px;
+				background: white;
+				position: absolute;
+				top:38px;
+				left:105px;			
+			}
+			.tab-percenge{
+				width:188px;
+				height:20px;
+				margin-top:12px;
+				text-align: center;
+			}
+			.tab-l::after{
+				content: '';
+				width:0;
+				height:0;
+			}
+			.need{
+				width:940px;
+				height:54px;
+				font-size: 30px;
+				margin-top:110px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #ccc;
+			}
+			.forall{
+				width:940px;
+				height:27px;				
+	            line-height: 40px;
+	            margin-left:15px;
+			}
+			.for-need{
+				width:140px;
+				height:27px;
+				float: left;
+			   margin-right: 40px;
+			}
+			.for-plan{
+				width:140px;
+				height:27px;
+				float: left;
+			}
+			.huashi{
+				width:940px;
+				height:176px;
+				margin-top:50px;
+				margin-bottom: 20px;
+			}
+			.huashi-left{
+				width:120px;
+				height:120px;
+				background: white;
+				float: left;
+					border-radius: 4px;
+			}
+			.huashi a img{
+				width:120px;
+				height:120px;
+				padding:4px;	
+	            border:1px solid #ddd;
+				box-sizing: border-box;
+				border-radius: 4px;
+			}
+			.details{
+				width:780px;
+				height:176px;
+				float: right;
+				margin-right:15px;
+			}
+			.details-top{
+				width:780px;
+				height:20px;
+				line-height: 20px;
+			}
+			.details-name{
+				font-size: 18px;
+				width:200px;
+			    height:20px;
+			    line-height: 20px;
+			    color:#515151;
+			    float: left;
+			}
+			.details-right{
+				float: right;
+				width:auto;
+				height:20px;
+				padding-top:3px;
+				box-sizing: border-box;
+			}
+			.stars{
+				display: inline-block;
+				height:14px;
+				line-height: 14px;
+				font-size: 12px;	
+				padding:0 15px;
+				border-right:1px solid #ccc;
+				float: left;
+				color:#857f7f;
+			}
+			.stars i{				
+				width:14px;
+				height:14px;
+				display: inline-block;
+				line-height: 12px;
+				font-family: 'iconfont';
+				color:#f6ba1e;
+				font-size: 14px;
+			    float: left;
+			    margin-right: 3px;
+			}
+			.stars span{
+				padding-left: 5px;
+			}
+			.details-bottom{
+				width:780px;
+				height:136px;
+				padding:20px;
+				box-sizing: border-box;
+				background: #eee;
+				margin-top: 20px;
+				position: relative;
+	
+			}
+			.details-bottom a img{
+				width:144px;
+				height:96px;
+				padding:4px 8px;
+				border: 1px solid #ddd;
+				background-color:#fff ;
+				float: left;
+				margin-right:5px;
+				border-radius: 0;
+			}
+		   .more{
+				width:142px;
+				height:94px;
+				background: #fff;
+			    display: inline-block;
+			    float: left;
+				border: 1px solid #ddd;
+			}
+			.more div{
+				width:126px;
+				height:86px;
+				background: rgba(0,0,0,0.7);	
+			    margin-top:4px;
+			    margin-left:8px;
+			    border-radius: 4px;
+			    text-align: center;
+			    line-height: 86px;
+			    font-size: 14px;
+			    color:#fff;
+			}
+			.details-bottom::before{
+				content: '';
+				font-family: 'iconfont';
+				color:#eee;
+				position: absolute;
+				font-size: 25px;
+				left:-17px;
+			}
+			
+			.left{
+				width:280px;
+				max-height:100%;
+			    position: fixed;
+			    top:0;
+			    left:0;
+			    z-index: 10;
+				overflow: hidden;
+				overflow-x: hidden;
+			}
+			.left:hover{
+				overflow-y: scroll;
+			}
+			.left-top{
+				width:280px;
+				height:195px;
+				background:#31343b;
+				padding-top:30px;
+				padding-left:30px;
+				box-sizing: border-box;
+			}
+			.left-top a img{
+				width:90px;
+				height:90px;
+				padding:4px;
+				background: white;
+				box-sizing: border-box;
+			}
+			.left-top p{
+				width:220px;
+				height:20px;
+				font-size: 14px;
+				font-weight: bold;
+				color:#eee;
+				margin:10px 0 ;
+			}
+			.left-top span{
+				width:220px;
+				height:20px;
+				float: left;
+				display: inline-block;
+			}
+			.left-top span i{
+				font-family: 'iconfont';
+				color:#f6ba1e;
+				font-size: 16px;
+				float: left;
+				margin-right:10px;
+				display: block;
+
+			}
+			.left-middle{
+				width:280px;
+				height:278px;
+				background:#26282e ;
+				padding-top:30px;
+				padding-left:30px;
+				box-sizing: border-box;
+			}
+			.l-title{
+				font-size: 14px;
+				color:#9ea8c7;
+			}
+			.l-time{
+				font-size: 18px;
+				color:#eee;
+				font-weight: normal;
+				padding-top: 8px;
+				display: block;
+			}
+			.l-title:nth-of-type(2){
+				margin-top:25px;
+			}
+			.flag{
+				width:220px;
+				height:52px;
+				background: #F6A11E;
+				margin-top:35px;
+				border-radius: 4px;
+				text-align: center;
+				line-height: 52px;
+				color:#fff;
+				letter-spacing: 3px;
+				font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', sans-serif;
+			}
+			.flag:hover{
+				background: #d88709;
+			}
+			.flag i{
+				font-family: 'iconfont';
+				padding-right: 15px;
+				display: inline-block;
+			}
+			.left-bm{
+				width:280px;
+				height:140px;
+				background:#31343b ;
+				padding:10px 0;
+				box-sizing: border-box;
+			}
+			.left-bm span{
+				display: block;
+				width:280px;
+				height:40px;
+				padding-left: 20px;
+				line-height: 40px;
+				box-sizing: border-box;
+				font-size: 14px;
+				color:#9ea8c7;
+			}
+			.left-bm span:hover{
+				background:rgba(0,0,0,0.75);
+				border-left: 2px solid #9ea8c7;
+				z-index: 2;
+			}
+			.left-bm span a{
+				color:#9ea8c7;
+			}
+			.left-bm span a:hover{
+				color:#9ea8c7;
+			}
+			.left-bm i{
+				font-family: 'iconfont';
+				padding-right: 15px;				
+			}
+		   .add-l{
+		   	width:280px;
+		   	height:70px;
+		   	background:rgba(0,0,0,0.75) ;
+		   }
+		   .add-r{
+		   	width:100%;
+		   	height:70px;
+		   }
+		   .l-hover1{
+		   	font-family: 'iconfont';
+		   	position: fixed;
+		   	font-size: 25px;
+		   	top:100px;
+		   	left:261px;
+		   	color:white;
+		   	z-index: 20;
+		   }
+		   .left:hover .l-hover1{
+		   	color:#26282e;
+		   		z-index: 10;
+		   }
+		   .l-hover{
+		   	display: none;
+		   	position: fixed;	
+		   	left:280px;
+		   	top:50px;
+		   	width:250px;
+		   	height:136px;
+		   	background: #26282e;	
+		   	padding:15px;
+		   	box-sizing: border-box;
+		   	 	
+		   }
+		   .left:hover .l-hover{
+		   	display: block;
+		   }
+		  .l-hover span{
+		  	display: block;
+		  	width:220px;
+		  	height:35px;
+		  	line-height: 35px;
+		  	text-align: center;
+		  	font-size: 12px;
+		  	color:#eee;
+		  }
+		  .l-hover span a{
+		  	color:#eee;
+		  }
+		  .l-hover span:nth-of-type(2) a:hover{
+		  	color:white;
+		  }
+		  .l-hover span i{
+		  	text-align: center;
+		  	font-family: 'iconfont';
+		  	color:#f6ba1e;
+			font-size: 16px;
+		/*	float: left;*/
+			margin-right:8px;
+			display: inline-block;
+		  }
+		  .l-hover span p{
+		  	padding-left: 120px;
+		  	display: inline-block;
+		  	color:white;
+		  	position: relative;
+		  }
+		  .l-hover span p::before{
+		  	display: block;
+		  	position: absolute;
+		  	left:5px;
+		  	top:14px;
+		  	content: '';
+		  	width:110px;
+		  	height:5px;
+		  	background:white;
+		  	border-radius: 2px;
+		  }
+		  .unfold{
+		  	width:940px;
+		  	height:auto;
+		  	margin-top:35px;
+		  	font-size: 18px;
+		  	color:#777;
+		  	display: none;
+		  }
+		  .unfold-title{
+		  	width:940px;
+		  	height:20px;
+		  	line-height: 20px;
+		  }
+		  .unfold-title i{
+		  	font-family: 'iconfont';
+		  }
+		  .unfold ul{
+		  	font-size: 14px;
+		  	margin-left:50px ;
+            padding:35px 0;
+		  }
+		  .unfold ul li{
+		  			  	color:#222 !important;
+		  }
+		  .unfold hr{
+		  	margin-bottom: 40px;
+		  }
+		  .renz{
+		  	background: #00a8e9;
+		  	color:white;
+		  	font-size: 12px;
+		  	line-height: 12px;
+	        border-radius: 10px;
+	        margin-left:20px;
+	        padding:2px 6px;
+		  }
+		  .co:hover,.details-name:hover{
+		  	color:#337ab7;
+		  }
+		</style>
+	</head>
+	<body>		
+		<div class="left">		
+			<div class="l-hover1"></div>
+		<div class="l-hover">
+			<span>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+				<i></i>
+			</span>
+			<span><a>共 1 条评价</a></span>
+			<span>约稿完成率 <p>100%</p></span>
+		</div>
+		
+			<div class="add-l"></div>
+			<div class="left-top">
+				<a><img src="photo/2-8.jpg"/></a>
+				<p>夏水汤汤</p>
+				<span>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</span>
+			</div>
+			<div class="left-middle">
+				<p class="l-title">截稿日期</p>
+				<strong class="l-time">2016-10-05</strong>
+				<p class="l-title">单张稿酬预算</p>
+				<strong class="l-time">￥ 100 ~ 400</strong>
+				<div class="flag">
+					<i></i>应征企划
+				</div>
+			</div>
+			<div class="left-bm">
+				<span><a><i></i>分享企划</a></span>
+				<span><a><i></i>查看应征画师</a></span>
+				<span><a><i></i>返回企划列表</a></span>
+			</div>
+			
+		</div>
+		
+				
+		<div class="right">
+			<div class="add-r"></div>
+			<div class="contain">
+				<h2 class="title"> 黑白漫，分辨度4096-2160，风格日漫写实类<a class="renz">企业认证</a></h2>
+				<div class="row">
+					<div class="row-left">企划发布于 2016-09-19 13:41:10
+					<span class="row-time">漫画 · 条漫</span>
+					</div>
+					<div class="row-2">
+						<i></i> 举报企划
+					</div>
+					<div class="row-3">
+						<i></i> 收藏企划
+					</div>
+					<div class="row-4">
+						展开详情
+					</div>					
+				</div>
+				
+				<div class="unfold">
+						<div class="unfold-title">
+							<i></i>稿件的画作风格为：
+						</div>
+						<ul>
+							<li>日系</li>
+							<li>欧美系</li>
+							<li>中国风</li>
+							<li>其他： 有趣or魔性or帅气</li>
+						</ul>
+						<hr class="line">
+						
+						<div class="unfold-title">
+							<i></i>稿件应呈现的画面效果为：
+						</div>
+						<ul>
+							<li>其他： 有趣or魔性or帅气</li>
+						</ul>
+						<hr class="line">
+						
+						<div class="unfold-title">
+							<i></i>颜色模式为：
+						</div>
+						<ul>
+							<li>用于网络或游戏：RGB模式</li>
+						</ul>
+						<hr class="line">
+						
+						<div class="unfold-title">
+							<i></i>稿件大小为：
+						</div>
+						<ul>
+							<li> A4印刷品：216 x 291 mm（含出血格3mm），300dpi</li>
+						</ul>
+						<hr class="line">
+						
+						<div class="unfold-title">
+							<i></i>稿件文件格式为：
+						</div>
+						<ul>
+							<li> 普通印刷、网络宣传：JPG格式文件</li>
+							<li> 需要背景透明：PNG格式文件</li>
+						</ul>
+						<hr class="line">
+						
+						<div class="unfold-title">
+							<i></i>稿件的主要用途，画面内容，大概约稿张数为：
+						</div>
+						<ul>
+							<li style="list-style: none;"> 根据主题脑洞【兄贵生物】进行脑洞绘制，具体脑洞类型参考下例图，详细内容设定设计可咨询可敲，稿酬和张数详谈 </li>
+						</ul>
+					
+				</div>
+				
+				<hr class="line">
+				<div class="reference"><p>参考例图 :</p>
+					<img src="photo/黑白漫.jpg"/>
+				</div>
+				<div class="addition">附件 :</div>
+				<div class="file">
+					<a><img src="icon/docx.png"/>漫画画面.docx</a>
+				</div>
+				<div class="order">企划流程 :</div>
+				<div class="table">
+					<div class="tab">
+						<div class="tab-name">开始约稿</div>
+						<div class="ball"></div>
+						<div class="tab-percenge">0 %</div>
+					</div>
+					<div class="tab">
+						<div class="tab-name">草稿</div>
+						<div class="ball"></div>
+						<div class="tab-percenge">20 %</div>
+					</div>
+					<div class="tab">
+						<div class="tab-name">纸稿</div>
+						<div class="ball"></div>
+						<div class="tab-percenge">30 %</div>
+					</div>
+					<div class="tab">
+						<div class="tab-name">上色</div>
+						<div class="ball"></div>
+						<div class="tab-percenge">40 %</div>
+					</div>
+					<div class="tab">
+						<div class="tab-name tab-l">收稿并支付</div>
+						<div class="ball"></div>
+						<div class="tab-percenge">100 %</div>
+					</div>
+				</div>
+				<div class="need">应征画师列表</div>
+				<div class="forall">
+					<div class="for-need">本企划共应征画师 5 名</div>
+					<div class="for-plan">企划方选定 0 名</div>
+				</div>
+				<div class="huashi">
+					<div class="huashi-left"> <a><img src="photo/2-12.png"/></a></div>
+					<div class="details">
+						<div class="details-top">
+							<a class="details-name">德大大</a>
+							<div class="details-right">
+								<span class="stars">
+								<i></i><i></i>
+								<i></i>
+								<i></i>
+								<i></i>
+							   </span>						
+							    <span class="stars co" style="cursor: pointer;">共1条评价</span>
+							    <span class="stars">任务完成率 <span>100%</span></span>
+							    <span class="stars">准时交稿率 <span>100%</span></span>
+							</div>
+						</div>
+						<div class="details-bottom">
+							<a><img src="photo/2-8.jpg"/></a>
+							<a><img src="photo/2-8.jpg"/></a>
+							<a><img src="photo/2-8.jpg"/></a>
+							<a><img src="photo/2-8.jpg"/></a>
+							<a class="more"><div>More</div></a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+var lock=true;
+var text='收起详情';
+var text1='展开详情'
+	$('.row-4').click(function(){
+		if(lock==true){
+			$('.unfold').slideDown();
+			lock=false;
+			$('.row-4').text(text+'');
+		
+		}
+		else if(lock==false){
+			$('.unfold').slideUp();
+			$('.row-4').text(text1+'');
+			lock=true;
+		}
+		
+	})
+</script>

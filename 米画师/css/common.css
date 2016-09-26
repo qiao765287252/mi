@@ -1,0 +1,11 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0;color:#857f7f; }  
+body, button, input, select, textarea { font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', sans-serif;font-size: 12px; }  
+button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size:100%; }  
+h2, h3 { font-size:14px; }  
+button, input, select, textarea, label { vertical-align:middle; outline:none; }  
+/*ul, ol { list-style:none; }  */
+a { text-decoration:none; color:#857f7f; vertical-align:baseline; cursor:pointer;font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', sans-serif; }  
+a:hover {color:#000; }  
+table { border-collapse:collapse; border-spacing:0; }  
+body { word-wrap:break-word; word-break:break-all; height:100%; } 
+i{font-style: normal;}
